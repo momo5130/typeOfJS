@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>typeof in JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body{
+        background-color:black ;
+         margin: 10%;
+        }
+        em{
+            color:white;
+            background-color: maroon;
+        }
+        h1{
+            color:white;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Typeof code along with output</h1>
+<em>
+    // Getting input via STDIN<br>
+    const readline = require("readline");<br>
+
+    const inp = readline.createInterface({<br>
+    input: process.stdin<br>
+    });<br>
+
+    const userInput = [];<br>
+
+    inp.on("line", (data) => {<br>
+    userInput.push(data);<br>
+    });<br>
+
+    inp.on("close", () => {<br>
+    //start-here<br>
+    //Your code goes here … replace the below line with your code logic <br>
+
+ 
+      console.log(typeof(1)); // Output--> number<br>
+      console.log(typeof(1.1)); // Output--> number<br>
+      console.log(typeof("1.1")); // Output--> string<br>
+      console.log(typeof(true)); // Output--> boolean<br>
+      console.log(typeof(null)); // Output--> object<br>
+      console.log(typeof(undefined)); // Output--> undefined<br>
+      console.log(typeof([])); // Output--> object<br>
+      console.log(typeof({})); // Output--> object<br>
+
+     //end-here<br>
+    });<br>
+</em>
+</body>
+</html>
